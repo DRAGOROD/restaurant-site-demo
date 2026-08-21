@@ -181,11 +181,32 @@ transition-delay: calc((sibling-index()-1)*0.2s);
 }
 }
 
-.nav-option:hover{
-  transition: 0.1s ease;
- cursor: pointer;
- color:#2F3E46;
+.nav-option{
+position: relative;
 }
+
+.nav-option:hover{
+  color:#2F3E46;
+  cursor: pointer;
+}
+
+.nav-option::before{
+  content: "";
+  position:absolute;
+  display: block;
+  width:100%;
+  height:2px;
+  bottom: 0;
+  left:0;
+  background-color: #3f5c1e;
+  transform: scaleX(0);
+  transition: transform 0.6s ease;
+}
+
+.nav-option:hover:before{
+transform: scaleX(1);
+}
+
 
 #order-btn{
   margin-right: 3rem;
@@ -224,7 +245,7 @@ transition: all 1s ease;
 
 
 #store-container{
-margin-top: 4rem;
+margin-top: 2rem;
 width:100%;
 text-align: center;
 position: relative;
@@ -277,6 +298,7 @@ position: relative;
    font-size: large;
    font-weight: bold;
    color: #4a1500;
+   margin-bottom: 2rem;
 }
 
 .tab-btns:hover{
@@ -291,10 +313,14 @@ position: relative;
 
 #menu-bg{
   position: absolute;
-  width:100%;
+  width:95%;
+  height:100%;
+  margin: auto;
   left:0;
+  right:0;
   top:9%;
   object-fit: contain;
+  border-radius: 15%;
 }
 
 /*Menu Body*/
@@ -407,11 +433,138 @@ animation:popin 0.5s linear;
                                         /*Menu Section End Here*/
 
 
+                                        /*Review Section Starting Here*/
+
+
+/*Review Head*/
+#review-container h3{
+  width:12%;
+  margin: auto;
+  margin-top: 3rem;
+  font-size: xx-large;
+  color:#1A2B4C;
+  text-align: center;
+  font-family: 'RandomButPerfect-Italic', cursive;
+  background: transparent;
+}    
+
+#review-container h3:hover{
+    animation: flip 1s linear;
+}
+
+#review-container p:not(.crousal-cards p){
+  margin-top: 2rem;
+  font-size: xx-large;
+  color:#4A235A;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Review Bg*/
+#review-bd{
+  top:30%;
+  width:95%;
+  border-radius: 20%;
+  position: absolute;
+  z-index: 0;
+}
+
+/*Review Body*/
+#review-container {
+  margin-top: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#crousal-container{
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  width:70%;
+ overflow-x: hidden;
+  gap:1rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 10rem;
+  text-align: center;
+  anchor-name: --crousal;
+}
+
+#crousal-container::-webkit-scrollbar{
+display: none;
+}
+
+#crousal-container::scroll-button(*){
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  position-anchor: --crousal;
+  background:transparent;
+  color:white;
+  border: none;
+  text-align: center;
+}
+
+#crousal-container::scroll-button(*):disabled{
+opacity: 0.5;
+color:rgb(207, 205, 205);
+}
+
+#crousal-container::scroll-button(left){
+content: "◀";
+position-area: left center;
+}
+    
+#crousal-container::scroll-button(right){
+content: "▶";
+position-area: right center;
+}
+
+.crousal-cards{
+flex:0 0 30%;
+aspect-ratio: 1;
+height:50%;
+scroll-snap-align: center;
+border-radius: 20%;
+background-color: rgba(0, 0, 255, 0.288);
+backdrop-filter: blur(8px);
+}
+
+.crousal-cards img{
+  border-radius: 50%;
+}
+
+
+.crousal-cards h4{
+  color:rgb(255, 255, 255);
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.crousal-cards p{
+  color:rgb(2, 255, 2);
+  background-color: transparent;
+}
+
+.crousal-cards p:first-of-type{
+  color:rgb(206, 206, 2);
+  background-color: transparent;
+  margin-bottom: 0.5rem;
+}
+                                        /*Review Section End Here*/
+
+
                                         /*Bookings Section Starting Here*/
 
 
-
                                         
+
+
+
+
+
 
 
                                         /*Bookings Section End Here*/

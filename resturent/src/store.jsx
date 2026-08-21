@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 /*BG Video Import */
-import Kitchen from './assets/kitchen.mp4';
+import Kitchen from './assets/kitchen_3.mp4';
 
 /*Appetizers Import */
 import C6 from './assets/c6.webp'
