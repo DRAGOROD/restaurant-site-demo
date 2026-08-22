@@ -56,7 +56,7 @@ function Hero(){
         <div className="text-container">
           <div className="hero-text text-1">
             <span></span>
-            <h1>Tandoor Tales</h1>
+            <h1>Velvet Spoon</h1>
           </div>
         </div>
       </div>

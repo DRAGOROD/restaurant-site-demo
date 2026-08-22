@@ -553,18 +553,258 @@ backdrop-filter: blur(8px);
   background-color: transparent;
   margin-bottom: 0.5rem;
 }
+
+
                                         /*Review Section End Here*/
 
 
                                         /*Bookings Section Starting Here*/
 
 
-                                        
+/*Bookings Head*/
+#bookings-container{
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  width:100%;
+  text-align: center;
+}       
+
+#bookings-heading{
+  font-size: xx-large;
+  color:#1A2B4C;
+  font-family: 'RandomButPerfect-Italic', cursive;
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  width:18.9%;
+}
+
+#bookings-heading span{
+  display: inline-block;
+  background: transparent;
+}
+
+#bookings-heading span:hover{
+  animation: flip 1s linear;
+}
+
+/*Bookings Body*/
+#bookings-body{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+#right-section{
+  width:50%;
+  background-color: transparent;
+}
+
+#left-section{
+  width:50%;
+  outline:2px solid red;
+  background-color: transparent;
+}
+
+/*Booking Form*/
+#bookings-form{
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width:60%;
+  height:90%;
+  background-color: #1a2b4c4b;
+  border-radius: 20%;
+}
+
+#bookings-form h5{
+  background-color: transparent;
+  color:#2C3E25;
+  font-family: 'Tonopah-Italic', cursive;
+  margin-bottom: 5rem;
+  font-size: x-large;
+}
+
+#bookings-form div:not(div[id="message"],div[id="booking-btn"]){
+  margin-left: auto;
+  margin-right: auto;
+  width:70%;
+  border: none;
+  height:2rem;
+  margin-top: 2rem;
+  position: relative;
+  background-color: transparent;
+  font-family: 'Tonopah-Italic', cursive;
+  font-size: large;
+  font-weight: 600;
+}
+
+#bookings-form div:not(div[id="date-time"],div[id="message"],div[id="booking-btn"]){
+  border-bottom: white 2px solid;
+}
+
+#bookings-form select {
+  height:3rem;
+  margin-top: 2rem;
+    margin-left: auto;
+  margin-right: auto;
+  width:60%;
+  color:#4a1500;
+  background-color: rgb(236, 232, 232);
+  border-radius:15px;
+  font-family: 'Tonopah-Italic', cursive;
+  font-size: large;
+  font-weight: 600;
+  border: none;
+}
+
+#bookings-form select option{
+  background-color: rgba(224, 198, 145, 0.253);
+}
+
+#bookings-form div input{
+  border:none;
+  height:100%;
+  width:100%;
+  color: #faa700;
+  font-family: 'Tonopah-Italic', cursive;
+  font-size: large;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+#date-time{
+  display: flex;
+  background-color: transparent;
+  gap:1rem;
+  font-family: 'Tonopah-Italic', cursive;
+}
+
+#message{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width:70%;
+  position: relative;
+  background-color: transparent;
+  font-family: 'Tonopah-Italic', cursive;
+  font-size: large;
+  font-weight: 600;
+  height:6rem;
+  background-color: rgb(236, 232, 232);
+  border-radius:1rem;
+}
+
+#bookings-form div textarea{
+object-fit: contain;
+width: 100%;
+height: 100%;
+background-color: transparent;
+border: none;
+color: #faa700;
+  font-family: 'Tonopah-Italic', cursive;
+  font-size: large;
+  font-weight: 600;
+  border-radius:1rem;
+}
+
+#bookings-form div label{
+  font-family: 'NightwatcherBB-Bold', cursive;
+  font-weight: bold;
+  color:#4a1500;
+  background-color: transparent;
+  position:absolute;
+  top:50%;
+  left:5px;
+  transform: translateY(-50%);
+  opacity:0.5;
+}
+
+#bookings-form div input:focus,select:focus,textarea:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+#bookings-form div:focus-within label:not(label[for="message-in"]){
+  transform: translateY(-170%);
+  opacity:1;
+  transition: 0.4s ease;
+}
+
+#message:focus-within label{
+  transform: translateY(-290%);
+  opacity:1;
+  transition: 0.4s ease;
+}
+
+#booking-btn{
+  width:40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2rem;
+  margin-bottom: 3rem;
+  padding: 1rem ;
+  background-color: #ebcd92;
+  color: #4a1500;
+  font-weight: 900;
+  border: none;
+  border-radius: 50px;
+  box-shadow: inset 0 4px 0 -1px #802000, inset 0 -4px 0 -1px #802000;
+}
+
+#booking-btn:hover{
+  background-color:#faa700 ;
+  cursor: pointer;
+  transition: 0.4s;
+}
 
 
+/*Faq Section*/
+#top-section{
+  margin-top: 2rem;
+  height:50%;
+  outline:2px solid red;
+}
 
+#top-section div{
+margin-top: 0.5rem;
+font-family: 'QuixeramobimNormal', cursive;
+font-weight: bold;
+font-size: x-large;
+color:rgb(255, 255, 255);
+background-color: #1a2b4c4b;
+width:78%;
+height:2.5rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+border-radius: 1rem;
+}
 
+#top-section p{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+font-family: 'QuixeramobimNormal', cursive;
+font-weight: bold;
+font-size: large;
+color:rgb(236, 235, 235);
+background-color: #1a2b4c4b;
+border-radius: 0.5rem;
+}
 
+#top-section div:hover{
+  cursor: pointer;
+}
 
+#top-section div span:nth-of-type(-n+1){
+  margin-right: 0;
+}
 
+#top-section div span{
+  background-color: transparent;
+}
                                         /*Bookings Section End Here*/
