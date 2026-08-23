@@ -460,7 +460,7 @@ animation:popin 0.5s linear;
 }
 
 /*Review Bg*/
-#review-bd{
+#review-bg{
   top:30%;
   width:95%;
   border-radius: 20%;
@@ -470,7 +470,7 @@ animation:popin 0.5s linear;
 
 /*Review Body*/
 #review-container {
-  margin-top: 7rem;
+  margin-top: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -563,10 +563,14 @@ backdrop-filter: blur(8px);
 
 /*Bookings Head*/
 #bookings-container{
-  margin-top: 15rem;
-  margin-bottom: 10rem;
-  width:100%;
+  margin-top: 10rem;
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  background-color: transparent;
+  position: relative;
+  isolation: isolate;
 }       
 
 #bookings-heading{
@@ -576,7 +580,8 @@ backdrop-filter: blur(8px);
   background: transparent;
   margin-left: auto;
   margin-right: auto;
-  width:18.9%;
+  width:20%;
+  margin-bottom: 5rem;
 }
 
 #bookings-heading span{
@@ -593,6 +598,7 @@ backdrop-filter: blur(8px);
   width:100%;
   display: flex;
   justify-content: center;
+  background-color: transparent;
 }
 
 #right-section{
@@ -602,7 +608,6 @@ backdrop-filter: blur(8px);
 
 #left-section{
   width:50%;
-  outline:2px solid red;
   background-color: transparent;
 }
 
@@ -613,16 +618,19 @@ backdrop-filter: blur(8px);
   margin-bottom: 1.5rem;
   width:60%;
   height:90%;
-  background-color: #1a2b4c4b;
-  border-radius: 20%;
+  background-color:#ebcd9227;
+  backdrop-filter: blur(8px);
+  border-radius: 3rem;
+    z-index: 1;
 }
 
 #bookings-form h5{
   background-color: transparent;
-  color:#2C3E25;
+  color:#faa700;
   font-family: 'Tonopah-Italic', cursive;
   margin-bottom: 5rem;
   font-size: x-large;
+    z-index: 1;
 }
 
 #bookings-form div:not(div[id="message"],div[id="booking-btn"]){
@@ -637,6 +645,7 @@ backdrop-filter: blur(8px);
   font-family: 'Tonopah-Italic', cursive;
   font-size: large;
   font-weight: 600;
+    z-index: 1;
 }
 
 #bookings-form div:not(div[id="date-time"],div[id="message"],div[id="booking-btn"]){
@@ -659,14 +668,14 @@ backdrop-filter: blur(8px);
 }
 
 #bookings-form select option{
-  background-color: rgba(224, 198, 145, 0.253);
+  background-color: rgba(224, 198, 145, 0.055);
 }
 
 #bookings-form div input{
   border:none;
   height:100%;
   width:100%;
-  color: #faa700;
+  color: white;
   font-family: 'Tonopah-Italic', cursive;
   font-size: large;
   font-weight: 600;
@@ -701,7 +710,7 @@ width: 100%;
 height: 100%;
 background-color: transparent;
 border: none;
-color: #faa700;
+color: #4a1500;;
   font-family: 'Tonopah-Italic', cursive;
   font-size: large;
   font-weight: 600;
@@ -711,13 +720,17 @@ color: #faa700;
 #bookings-form div label{
   font-family: 'NightwatcherBB-Bold', cursive;
   font-weight: bold;
-  color:#4a1500;
+  color:rgb(196, 193, 193);
   background-color: transparent;
   position:absolute;
   top:50%;
   left:5px;
   transform: translateY(-50%);
   opacity:0.5;
+}
+
+#message label[for="message-in"]{
+  color:#4a1500;
 }
 
 #bookings-form div input:focus,select:focus,textarea:focus{
@@ -727,12 +740,14 @@ color: #faa700;
 
 #bookings-form div:focus-within label:not(label[for="message-in"]){
   transform: translateY(-170%);
+  color:#FDD88C;
   opacity:1;
   transition: 0.4s ease;
 }
 
 #message:focus-within label{
   transform: translateY(-290%);
+  color:#FDD88C;
   opacity:1;
   transition: 0.4s ease;
 }
@@ -744,8 +759,9 @@ color: #faa700;
   margin-top:2rem;
   margin-bottom: 3rem;
   padding: 1rem ;
-  background-color: #ebcd92;
-  color: #4a1500;
+  background-color:transparent;
+  backdrop-filter: blur(50px);
+  color:#faa700;
   font-weight: 900;
   border: none;
   border-radius: 50px;
@@ -754,16 +770,25 @@ color: #faa700;
 
 #booking-btn:hover{
   background-color:#faa700 ;
+  color:#802000;
   cursor: pointer;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
+/*Right Section*/
+
+#top-section{
+  background-color: transparent;
+}
+
+#bottom-section{
+  background-color: transparent;
+}
 
 /*Faq Section*/
 #top-section{
   margin-top: 2rem;
   height:50%;
-  outline:2px solid red;
 }
 
 #top-section div{
@@ -772,32 +797,36 @@ font-family: 'QuixeramobimNormal', cursive;
 font-weight: bold;
 font-size: x-large;
 color:rgb(255, 255, 255);
-background-color: #1a2b4c4b;
-width:78%;
+background-color: #ebcd9227;
+backdrop-filter: blur(8px);
+width:85%;
 height:2.5rem;
 display: flex;
 align-items: center;
 justify-content: space-between;
-margin-left: auto;
+margin-left: 10%;
 margin-right: auto;
 border-radius: 1rem;
 }
 
 #top-section p{
   width:75%;
-  margin-left: auto;
+  margin-left: 15%;
   margin-right: auto;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 font-family: 'QuixeramobimNormal', cursive;
 font-weight: bold;
 font-size: large;
 color:rgb(236, 235, 235);
-background-color: #1a2b4c4b;
+background-color: #1a2b4c73;
+backdrop-filter: blur(8px);
 border-radius: 0.5rem;
 }
 
 #top-section div:hover{
   cursor: pointer;
+  background-color: #ebcd926c;
+backdrop-filter: blur(50px);
 }
 
 #top-section div span:nth-of-type(-n+1){
@@ -806,5 +835,48 @@ border-radius: 0.5rem;
 
 #top-section div span{
   background-color: transparent;
+}
+
+/*Bottom Section*/
+#bottom-section h4{
+  font-size: xx-large;
+  color:#faa700;
+  width:40%;
+  border-radius: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+}
+
+#bottom-section img{
+  padding:0.3rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  box-shadow:  3px 3px 9px black;
+}
+
+#bottom-section img:hover{
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+#icon-container{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap:2rem;
+  background-color: transparent;
+}
+
+/**Background Video*/
+#bookings-bg{
+  top:10%;
+  width:95%;
+  left:3%;
+  border-radius: 20%;
+  position: absolute;
+  z-index: -1;
 }
                                         /*Bookings Section End Here*/

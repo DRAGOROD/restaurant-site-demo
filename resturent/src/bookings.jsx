@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 import Bookings_Bg from'./assets/bookings_bg.mp4'
+import Fbi from './assets/fbi.webp'
+import Ii from './assets/ii.webp'
+import Ti from './assets/ti.webp'
 
 function Bookings(){
 
@@ -26,6 +29,21 @@ let faqs=[
     }
 ]
 
+let icons=[
+    {
+    name:'Twitter',
+    src:Ti
+    },
+    {
+    name:'Facebook',
+    src:Fbi
+    },
+    {
+    name:'Instagram',
+    src:Ii
+    } 
+    ];
+
 let [show,setShow]=useState(null)
 
 function click(id){
@@ -35,17 +53,23 @@ function click(id){
 return(
     <>
     <div id="bookings-container">
+        <video src={Bookings_Bg} playsInline loop autoPlay id="bookings-bg"/>
         <h2 id="bookings-heading"><span>Book</span> <span>Your</span> <span>Table</span></h2>
         <div id="bookings-body">
             <div id="left-section">
                 <div id="top-section">
-                    
                {faqs.map((v,i)=>
                <>
                <div key={i} onClick={()=>click(v.id)}><span>{v.question}</span><span style={{display:"inline-block",transition:"0.3s ease",transform:show===v.id?"rotate(180deg)":"rotate(0deg)"}}>▼</span></div>
                {show===v.id && (<p>{v.answer}</p>)}
                </>
                 )}
+                </div>
+                <div id="bottom-section">
+                    <h4>Connect With Us!</h4>
+                    <div id="icon-container">
+                    {icons.map((v,i)=><img src={v.src} alt={v.name} key={i}/>)}
+                    </div>
                 </div>
             </div>
             <div id="right-section">
