@@ -197,12 +197,12 @@ let activeTab=menu.find(tab=>tab.category===activeId)
 
 return (
     <>
-    <h2 id="menu-heading">MENU</h2>
-    <div id="store-container">
-      <div id="menu-head">
+    <h2 id="menu-heading" className="section-animation">MENU</h2>
+    <div id="store-container" className="section-animation">
+      <div id="menu-head" className="section-animation">
        {menu.map((v,i)=><div className="tab-btns" onClick={()=>handleClick(v.category)} key={i} id={activeId===v.category?"active-tab":""}>{v.category}</div>)}
        </div>
-       <video src={Kitchen} loop playsInline autoPlay id="menu-bg"/>
+       <video src={Kitchen} loop playsInline autoPlay id="menu-bg" className="section-animation"/>
        <div id="menu-body">
        {activeId && (activeTab.items.map((item,i)=><div className="dish-cards" key={i} id={visible?"show-tab":""}>
                            <div className="image-container">

@@ -5,6 +5,29 @@
   scroll-behavior: smooth;
 }
 
+/*Scrolling Animation*/
+.section-animation {
+  animation-fill-mode: forwards;
+  timeline-trigger: --on-enter view() entry 0 cover 10% ;
+  animation-name: scroll-slide;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+  animation-trigger: --on-enter play-forwards none;
+}
+
+@keyframes scroll-slide {
+  from {
+    opacity: 0;
+    scale: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0);
+  }
+}
 
                                             /*Hero Section Starts Here*/
 
@@ -74,8 +97,8 @@
   opacity: 0;
   transform-style: preserve-3d;
   will-change: transform, opacity;
-  background: transparent;
-  backdrop-filter: blur(8px);
+  background-color: transparent;
+  backdrop-filter: blur(20px);
   border-radius: 9999px;
 }
 

@@ -78,9 +78,9 @@ const reviews = [
 
 return (
     <div id="review-container">
-        <h3>REVIEWS</h3>
-        <p>See What Our Customers Thinks About Us.....</p>
-        <video src={Res_Vid} playsInline loop autoPlay id="review-bg"/>
+        <h3 className="section-animation">REVIEWS</h3>
+        <p className="section-animation">See What Our Customers Thinks About Us.....</p>
+        <video src={Res_Vid} playsInline loop autoPlay id="review-bg" className="section-animation"/>
          <div id="crousal-container">
      {reviews.map((v,i)=><div className="crousal-cards" key={i}>
                            <img src={v.image} alt={v.name}/>

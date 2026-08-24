@@ -10,8 +10,8 @@ function Footer(){
 
     return (
         <>
-    <div id="footer-container">
-        <div >
+    <div id="footer-container" >
+        <div className="section-animation">
             <img src={Ol} alt="Footer Icons"/>
             <h3>Quick Links</h3>
             <p>Gallery</p>
@@ -20,7 +20,7 @@ function Footer(){
             <p>Privacy Policy</p>
             <p></p>
         </div>
-        <div >
+        <div className="section-animation">
             <img src={Ep} alt="Footer Icons"/>
             <h3>Events & Partys</h3>
             <p>Festivals</p>
@@ -29,7 +29,7 @@ function Footer(){
             <p>Book a Venue</p>
             <p></p>
         </div>
-        <div >
+        <div className="section-animation">
             <img src={Oh} alt="Footer Icons"/>
              <h3>Opening Hours</h3>
             <p>Tuesday 10:00AM - 11:00 PM</p>
@@ -38,7 +38,7 @@ function Footer(){
             <p>Friday 10:00AM - 11:00 PM</p>
             <p>Saturday 10:00AM - 11:00 PM</p>
         </div>
-        <div >
+        <div className="section-animation">
             <img src={Fu} alt="Footer Icons"/>
             <h3>Find Us</h3>
             <p>	B 1/e 19, Mohan Coop Indl Area</p>
