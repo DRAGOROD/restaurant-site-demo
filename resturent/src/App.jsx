@@ -3,6 +3,7 @@ import Navbar from './navbar.jsx';
 import Store from './store.jsx'
 import Bookings from './bookings.jsx';
 import Review from './review.jsx';
+import Footer from './footer.jsx';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <Store/>
     <Bookings/>
     <Review/>
+    <Footer/>
     </>
   );
 

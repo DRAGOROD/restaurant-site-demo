@@ -880,3 +880,87 @@ backdrop-filter: blur(50px);
   z-index: -1;
 }
                                         /*Bookings Section End Here*/
+
+
+                                        /*Footer Section Start Here*/
+
+
+#footer-container {
+display: flex;
+margin-top: 18rem;
+width:100%;
+background-color:#2C2C2C;
+justify-content: space-around;
+align-items:flex-start;
+text-align: center;
+}        
+
+#footer-container div{
+  background-color: transparent;
+}
+
+#footer-container img{
+  margin-top: 0.5rem;
+  background-color: transparent;
+}
+
+#footer-container img:hover{
+  animation:circle-in 0.5s linear;
+}
+
+@keyframes circle-in{
+  0%{
+    transform:rotateX(0);
+    scale:1;
+  }
+  50%{
+    transform: rotate(180deg);
+    scale:0;
+  }
+  100%{
+    transform:rotateX(360deg);
+    scale:1;
+  }
+}
+
+#footer-container h3{
+  background-color: transparent;
+  color:#faa700;
+}
+
+#footer-container p{
+  margin-top: 1rem;
+  color:rgb(216, 213, 213);
+  background-color: transparent;
+  transform: translateX(0);
+}
+
+#footer-container p:hover{
+  color: #FDD88C;
+  text-decoration: underline;
+  cursor: pointer;
+  transform: translateX(5%);
+  transition: 0.6s ease;
+}
+
+#footer-container p a{
+  text-decoration: none;
+  color: rgb(216, 213, 213);
+  background-color: transparent;
+}
+
+#copyright{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+  text-align: center;
+  color:burlywood
+}
+
+
+
+
+
+
+
+                                        /*Footer Section End Here*/
