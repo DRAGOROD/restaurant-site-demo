@@ -7,10 +7,9 @@ https://github.com/user-attachments/assets/ba83c8a5-638c-446b-8263-0079e347fe02
 ## 🛠️ Tools & Technologies Used
 - React
 - JavaScript
-- HTML5
-- CSS3
+- HTML
+- CSS
 - Git
-- GitHub
 - Vite
 
 ## ✨ Features
