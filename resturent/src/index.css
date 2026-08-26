@@ -380,6 +380,7 @@ animation:popin 0.5s linear;
   box-shadow: 2px 2px 4px 4px #faa700 ;
   position: relative;
   overflow: hidden;
+  
 }
 
 .dish-cards::before{
@@ -424,9 +425,8 @@ animation:popin 0.5s linear;
 }
 
 .dish-cards img:hover{
-  transition: 0.3s;
-  width:110%;
-  height:110%;
+  transition: 0.5s;
+  scale:1.2;
 }
 
 .dish-cards h4{
@@ -981,9 +981,545 @@ text-align: center;
 }
 
 
-
-
-
-
-
                                         /*Footer Section End Here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------RESPONSIVE------------------------------------------------*/
+
+
+@media (max-width: 799px) {
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+                                      /*HERO */
+
+  .scroll-video-section {
+    width: 95%;
+    height: 250px;
+    margin-top: 1rem;
+  }
+
+  .video-sticky {
+    height: 100%;
+    width:100%;
+  }
+
+  .hero-video{
+    width:100%;
+    height: 100%;
+    scale:1;
+  }
+
+  /* =========================
+     NAVBAR
+     ========================= */
+
+  #nav-container {
+    width: 95%;
+    height: auto;
+    margin: 1rem auto 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #nav-links {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+
+  #btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #order-btn {
+    margin-right: 0;
+    padding: 0.8rem 1.5rem;
+  }
+
+
+                            /* MENU */
+
+  #store-container {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #menu-heading {
+    width: 100%;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  #menu-head {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  #menu-body{
+  }
+
+  .tab-btns {
+    padding: 0.7rem 1rem;
+    font-size: medium;
+    margin-bottom: 1rem;
+  }
+
+  #menu-bg {
+    width: 100%;
+
+    top: 15%;
+    border-radius: 2%;
+    object-fit: cover;
+    flex-wrap: wrap;
+  }
+
+  .dish-cards {
+    width:40%;
+    height:100%;
+    margin-top: 5rem;
+  }
+
+  .image-container {
+    width: 92%;
+    height: 68%;
+  }
+
+  .dish-cards h4{
+    font-size: large;
+  }
+
+  .dish-cards p{
+    font-size: small;
+  }
+
+
+                                        /*REVIEWS*/
+
+  #review-container {
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  #review-container h3 {
+    width: auto;
+    font-size: xx-large;
+  }
+
+  #review-container p:not(.crousal-cards p) {
+    width: 95%;
+    height:100%;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #review-bg {
+    width: 100%;
+    top: 38%;
+    border-radius: 10%;
+  }
+
+  #crousal-container {
+    width: 80%;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .crousal-cards {
+    flex: 0 0 70%;
+  }
+
+  .crousal-cards img{
+    margin-top: -2rem;
+    margin-bottom: -1rem;
+   scale:0.6;
+  }
+
+  .crousal-cards h4{
+    font-size: medium;
+    margin-bottom: 0.2rem;
+  }
+
+  .crousal-cards p{
+    font-size: small;
+  }
+
+  #crousal-container::scroll-button(*) {
+    font-size: 4rem;
+  }
+
+
+                                        /*BOOKINGS*/
+
+
+  #bookings-bg{
+   top:35%;
+   border-radius: 2%;
+   height:80%;
+  } 
+
+  #bookings-container {
+    width: 95%;
+    margin-top: 15rem;
+  }
+
+  #bookings-heading {
+    width: auto;
+    font-size: xx-large;
+    margin-bottom: 5rem;
+  }
+
+  #bookings-body {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  #left-section,
+  #right-section {
+    width: 100%;
+  }
+
+
+  /*FAQ*/
+  #top-section {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  #top-section div {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    min-height: 2.5rem;
+    padding: 0.3rem 0.8rem;
+    box-sizing: border-box;
+    font-size: large;
+  }
+
+  #top-section p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
+
+  /*SOCIAL ICONS */
+  #bottom-section {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  #bottom-section h4 {
+    width: auto;
+    font-size: x-large;
+    padding: 0.5rem;
+  }
+
+  #icon-container {
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  #bottom-section img {
+    width: 45px;
+    height: 45px;
+  }
+
+
+  /*BOOKING FORM*/
+  #bookings-form {
+    width: 90%;
+    height: auto;
+    min-height: 0;
+    margin: auto;
+    padding: 2rem 0 2rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+  }
+
+  #bookings-form h5 {
+    font-size: x-large;
+    margin-bottom: 3rem;
+  }
+
+  #bookings-form div:not(div[id="message"], div[id="booking-btn"]) {
+    width: 80%;
+    height: 2rem;
+    margin-top: 2rem;
+  }
+
+  #bookings-form select {
+    width: 80%;
+    height: 3rem;
+    font-size: medium;
+  }
+
+  #date-time {
+    width: 80% !important;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  #date-time input {
+    min-width: 0;
+    font-size: small;
+  }
+
+
+/*MESSAGE */
+  #message {
+    width: 80%;
+    height: 7rem;
+  }
+
+  #bookings-form div textarea {
+    font-size: medium;
+  }
+
+
+  /*BOOK BUTTON */
+  #booking-btn {
+    width: 55%;
+    padding: 0.9rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+
+  /*BACKGROUND VIDEO */
+  #bookings-bg {
+    width: 100%;
+    height: 94%;
+    left: 0;
+    top: 7%;
+    object-fit: cover;
+    border-radius: 2%;
+  }
+
+
+                                      /*FOOTER */
+
+  #footer-container {
+    margin-top: 1rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+  }
+
+  #footer-container > div {
+    width: 100%;
+  }
+
+  #footer-container h3 {
+    font-size: large;
+  }
+
+  #footer-container p {
+    font-size: medium;
+  }
+
+  #copyright {
+    font-size: small;
+    padding: 1rem;
+  }
+}
+
+
+
+
