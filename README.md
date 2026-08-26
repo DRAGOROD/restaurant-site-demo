@@ -2,6 +2,8 @@ Velvet Spoon is a modern fine-dining restaurant website built with React that pr
 
 ⭐ Project Link:- https://dragorod.github.io/restaurant-site-demo/
 
+https://github.com/user-attachments/assets/ba83c8a5-638c-446b-8263-0079e347fe02
+
 ## 🛠️ Tools & Technologies Used
 - React
 - JavaScript
